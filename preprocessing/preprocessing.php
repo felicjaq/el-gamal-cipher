@@ -14,6 +14,7 @@ function text_preprocessing(): void {
         for ($i = 0; $i < count($message); $i++) {
             file_put_contents($dir. "/part_" . $i . ".txt", $message[$i]);
         }
+        echo "Предобработка текста прошла успешно \n";
     } else {
         exit("Вы ввели неправильный путь, попробуйте еще раз: \n");
     }
